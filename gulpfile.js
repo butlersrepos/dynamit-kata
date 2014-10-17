@@ -3,7 +3,7 @@ var less = require( 'gulp-less' );
 var del = require( 'del' );
 
 var paths = {
-	lessFiles: './less/*.less',
+	lessFiles: './less/[^_]*.less',
 	cssFiles : './css/*.css',
 	cssDir   : './css/'
 };

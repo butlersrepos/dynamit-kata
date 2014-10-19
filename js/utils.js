@@ -10,6 +10,7 @@ Dynamit.Utils = {
 	ensureStringPrepend: function ensureStringPrepend(sPrepend, sBaseString) {
 		if( typeof sBaseString !== 'string' ) { return sBaseString; }
 		if( sBaseString.indexOf(sPrepend) == 0 ) { return sBaseString; }
+		if( sPrepend === null || sPrepend === undefined ) { return sBaseString; }
 		return sPrepend + sBaseString;
 	}
 };
